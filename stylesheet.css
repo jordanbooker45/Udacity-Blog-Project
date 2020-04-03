@@ -2,4 +2,95 @@
     background-color: seashell;
 }
 
-    
+body {
+    display: grid;
+    grid-gap: 10px 10px;
+    place-self: center;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "fltl"
+    "hd"
+    "nav"
+    "main"
+    "ft"
+}
+
+#tl{
+    background-image: url(photos/000504070005.jpg); /*Museum of Contemporary Art, Miami*/
+    height: 500px;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    }
+
+#tldr {
+    display: inline;
+    padding: 1em;
+    text-align: right;
+    vertical-align: middle;
+    color: seashell;
+    opacity: 0;
+    z-index: 2;
+}   
+
+.hd {
+    grid-area: hd;
+    vertical-align: middle;
+}
+
+.nv{
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    max-width: 50%;
+    height: auto;
+}
+
+.main {
+    grid-area: main;
+    justify-content: center;
+}
+
+.ft {
+    grid-area: ft;
+    background-color: #2d2d2d;
+}
+
+.b1 {
+    background-color: #2d2d2d
+}
+
+.b2 {
+    background-color: #2d2d2d
+}
+
+.b3 {
+    background-color: #2d2d2d;
+    color: seashell;
+}
+/* @media:(max display 900px)
+body {
+    display: grid;
+    grid-gap: 10px 10px;
+    place-self: center;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd hd hd hd hd"
+    "hd hd hd hd hd hd hd hd hd hd hd hd"
+    "hd hd hd hd hd hd hd hd hd hd hd hd"
+    "hd hd hd hd hd hd hd hd hd hd hd hd"
+    "hd hd hd hd hd hd hd hd hd hd hd hd"
+    "hd hd hd hd hd hd hd hd hd hd hd hd"
+    "main main main main main main main main main main main main"
+    "main main main main main main main main main main main main"
+    "main main main main main main main main main main main main"
+    "main main main main main main main main main main main main"
+    "ft ft ft ft ft ft ft ft ft ft ft ft"
+    "ft ft ft ft ft ft ft ft ft ft ft ft"
+    "ft ft ft ft ft ft ft ft ft ft ft ft"
+} */

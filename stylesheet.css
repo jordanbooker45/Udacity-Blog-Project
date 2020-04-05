@@ -17,13 +17,13 @@ body {
 }
 
 #tl{
-    background-image: url(photos/000504070005.jpg); /*Museum of Contemporary Art, Miami*/
+    background-image: url(photos/header-large.png); /*Museum of Contemporary Art, Miami*/
     height: 500px;
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0;
-    }
+    } 
 
 #tldr {
     display: inline;

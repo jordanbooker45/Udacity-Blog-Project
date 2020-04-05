@@ -17,23 +17,24 @@ body {
 }
 
 #tl{
-    background-image: url(photos/header-large.png); /*Museum of Contemporary Art, Miami*/
-    height: 500px;
-    background-position: center; 
+    background-image: url(photos/000504070005.jpg); /*Museum of Contemporary Art, Miami*/
+    height: 550px;
+    background-position: right; 
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0;
     } 
 
 #tldr {
-    display: inline;
     padding: 1em;
     text-align: right;
     vertical-align: middle;
-    color: seashell;
-    opacity: 0;
-    z-index: 2;
-}   
+    position: absolute;
+    right: 0;
+    top: 10%;
+    background: black;
+    background: rgba(255, 245, 238, 0);
+    color: white;
+ }   
 
 .hd {
     grid-area: hd;

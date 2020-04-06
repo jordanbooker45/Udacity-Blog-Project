@@ -1,50 +1,68 @@
 body {
     display: grid;
     background-color: seashell;
-    grid-gap: 10px 10px;
-    place-self: center;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr;
+    margin: 0;
+    grid-template-rows: 500px auto auto;
     grid-template-areas: 
-    "fltl"
-    "hd"
-    "nav"
-    "main"
-    "ft"
-}
+      "header"
+      "main"
+      "footer";
+    }
 
-#tl{
+.wrapper {
+    grid-area: header;
+    display: grid;
+    grid-template-rows:  20px 420px 60px ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      ". . ."
+      ". . header-text"
+      "nav nav nav";
     background-image: url(photos/000504070005.jpg); /*Museum of Contemporary Art, Miami*/
-    height: 550px;
-    background-position: right; 
+    height: 500px;
+    background-position: left; 
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+#cover {
+    grid-area: header-text;
     } 
 
-#tldr {
+#header-text {
     padding: 1em;
     text-align: right;
-    vertical-align: middle;
-    position: absolute;
-    right: 0;
-    top: 10%;
     background: black;
     background: rgba(255, 245, 238, 0);
     color: white;
+    margin: 0;
  }   
 
-.hd {
-    grid-area: hd;
-    vertical-align: middle;
+ .nv {
+    grid-area: nav;
+    justify-content: center;
+    background: #2d2d2d;
+    background: rgba(255, 245, 238, 0);
+        display: grid;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-areas: "home posts about"; 
 }
 
-.nv {
-    display: grid;
-    grid-template-columns: 100px 100px 100px;
-    justify-content: center;
-    background: black;
-    background: rgba(255, 245, 238, 0);
-    border-color: white;
+.home {
+    grid-area: home;
+    text-align: right;
+    color: white;
+}
+
+.posts {
+    grid-area: posts;
+    color: white;
+    text-align: center;
+}
+
+.about {
+    grid-area: about;
+    color: white;
 }
 
 @media only screen and (max-width: 600px) 
@@ -55,14 +73,6 @@ a {
     align-items: center;
     background: black;
     background: rgba(255, 245, 238, 0);
-}
-
-.a-link {
-    display: block;
-    color: white;
-    background: black;
-    background: rgba(255, 245, 238, 0);
-    text-align: center;
 }
 
 }
@@ -81,11 +91,6 @@ Maybe use this media query to have the flexbox go verticle and be not have the b
     justify-content: center;
 }
 
-.ft {
-    grid-area: ft;
-    background-color: #2d2d2d;
-}
-
 .b1 {
     background-color: #2d2d2d
 }
@@ -98,25 +103,4 @@ Maybe use this media query to have the flexbox go verticle and be not have the b
     background-color: #2d2d2d;
     color: seashell;
 }
-/* @media:(max display 900px)
-body {
-    display: grid;
-    grid-gap: 10px 10px;
-    place-self: center;
-    grid-auto-flow: row;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-areas: 
-    "hd hd hd hd hd hd hd hd hd hd hd hd"
-    "hd hd hd hd hd hd hd hd hd hd hd hd"
-    "hd hd hd hd hd hd hd hd hd hd hd hd"
-    "hd hd hd hd hd hd hd hd hd hd hd hd"
-    "hd hd hd hd hd hd hd hd hd hd hd hd"
-    "hd hd hd hd hd hd hd hd hd hd hd hd"
-    "main main main main main main main main main main main main"
-    "main main main main main main main main main main main main"
-    "main main main main main main main main main main main main"
-    "main main main main main main main main main main main main"
-    "ft ft ft ft ft ft ft ft ft ft ft ft"
-    "ft ft ft ft ft ft ft ft ft ft ft ft"
-    "ft ft ft ft ft ft ft ft ft ft ft ft"
-} */
+

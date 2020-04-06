@@ -1,9 +1,6 @@
-* {
-    background-color: seashell;
-}
-
 body {
     display: grid;
+    background-color: seashell;
     grid-gap: 10px 10px;
     place-self: center;
     grid-template-rows: auto;
@@ -41,15 +38,43 @@ body {
     vertical-align: middle;
 }
 
-.nv{
-    display: flex;
+.nv {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
     justify-content: center;
+    background: black;
+    background: rgba(255, 245, 238, 0);
+    border-color: white;
 }
 
-img {
-    max-width: 50%;
-    height: auto;
+@media only screen and (max-width: 600px) 
+a {
+    float: none;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    background: rgba(255, 245, 238, 0);
 }
+
+.a-link {
+    display: block;
+    color: white;
+    background: black;
+    background: rgba(255, 245, 238, 0);
+    text-align: center;
+}
+
+}
+
+/*@media only screen and (max-width: 600px) {
+    .a-link {
+      background: seashell;
+      border: white;
+
+    }
+Maybe use this media query to have the flexbox go verticle and be not have the background image behind it...*/
+
 
 .main {
     grid-area: main;

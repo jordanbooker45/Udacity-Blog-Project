@@ -1,17 +1,17 @@
 body {
     display: grid;
-    background-color: seashell;
     margin: 0;
     grid-template-rows: 500px auto auto;
+    row-gap: 15px;
     grid-template-areas: 
       "header"
       "main"
       "footer";
-    }
+}
 
-    a {
-        text-decoration: none;
-    }
+a {
+    text-decoration: none;
+}
 
 .header-wrapper {
     grid-area: header;
@@ -42,7 +42,7 @@ body {
     margin: 0;
  }   
 
- .nv {
+.nv {
     grid-area: nav;
     justify-content: center;
     background: #2d2d2d;
@@ -69,43 +69,10 @@ body {
     color: white;
 }
 
-@media only screen and (max-width: 600px) 
-a {
-    float: none;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    background: black;
-    background: rgba(255, 245, 238, 0);
-}
-
-}
-
-/*@media only screen and (max-width: 600px) {
-    .a-link {
-      background: seashell;
-      border: white;
-
-    }
-Maybe use this media query to have the flexbox go verticle and be not have the background image behind it...*/
-
-
 .main {
     grid-area: main;
     justify-content: space-between;
     align-items: center;
 }
 
-.b1 {
-    background-color: #2d2d2d
-}
-
-.b2 {
-    background-color: #2d2d2d
-}
-
-.b3 {
-    background-color: #2d2d2d;
-    color: seashell;
-}
 

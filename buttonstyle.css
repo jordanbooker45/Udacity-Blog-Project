@@ -1,0 +1,23 @@
+.ar1 {
+    height: 250px;
+    width: 250px;
+}
+
+.button-text {
+    display: inline-block;
+
+}
+
+.button-title {
+    color: white;
+}
+
+.ar1::before{ 
+    content: inherit;
+    background-color: #2d2d2d;
+    background-image: url(photos/22540018.JPG); /*put in description later*/
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(2px); 
+}

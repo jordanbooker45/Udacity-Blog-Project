@@ -9,6 +9,10 @@ body {
       "footer";
     }
 
+    a {
+        text-decoration: none;
+    }
+
 .wrapper {
     grid-area: header;
     display: grid;
@@ -88,7 +92,8 @@ Maybe use this media query to have the flexbox go verticle and be not have the b
 
 .main {
     grid-area: main;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .b1 {

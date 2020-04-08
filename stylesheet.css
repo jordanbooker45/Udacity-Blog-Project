@@ -13,7 +13,7 @@ body {
         text-decoration: none;
     }
 
-.wrapper {
+.header-wrapper {
     grid-area: header;
     display: grid;
     grid-template-rows:  20px 420px 60px ;

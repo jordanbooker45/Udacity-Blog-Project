@@ -1,23 +1,51 @@
-.ar1 {
-    height: 250px;
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button-wrapper {
     width: 250px;
-}
-
-.button-text {
-    display: inline-block;
+    height: 250px;
+    position: relative;
 
 }
 
-.button-title {
-    color: white;
+.blog-post-button1 {
+    color:white;
+    background-color: rgba(45,45,45,0);
+    width: 100%;
+    height: 100%;
 }
 
-.ar1::before{ 
-    content: inherit;
-    background-color: #2d2d2d;
-    background-image: url(photos/22540018.JPG); /*put in description later*/
+.blog-post-button2 {
+    color:white;
+    background-color: rgba(45,45,45,0);
+    width: 100%;
+    height: 100%;
+
+}
+
+.blog-post-button3 {
+    color:white;
+    background-color: rgba(45,45,45,0);
+    width: 100%;
+    height: 100%;
+
+}
+
+.button-wrapper::before { 
+    content: "";
+    background-image: url(photos/22540021.JPG); /*put in description later*/
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(2px); 
-}
+    filter: blur(2px);
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+    z-index: -1;
+  }

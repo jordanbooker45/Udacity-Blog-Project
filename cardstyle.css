@@ -5,106 +5,108 @@
     justify-content: space-evenly;
 }
 
-.button-wrapper1 {
+.card-container{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.card-wrapper1 {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    vertical-align: middle;
+}
+
+.card-wrapper2 {
     width: 300px;
     height: 300px;
     margin: 10px;
     position: relative;
 }
 
-.button-wrapper2 {
-    width: 300px;
-    height: 300px;
-    margin: 10px;
-    position: relative;
-}
-
-.button-wrapper3 {
+.card-wrapper3 {
     width: 300px;
     height: 300px;
     margin: 10px;
     position: relative;    
 }
 
-.button-text{
+.card-text{
     color: white;
     text-shadow: 2px 2px 4px #2d2d2d;
     margin: 0;
 }
 
-.button-text-medium {
+.card-text-medium {
     color: white;
     text-shadow: 2px 2px 4px #2d2d2d;
     margin: 0;
 }
 
-.button-text-small {
+.card-text-small {
     color: white;
 }
 
-.blog-post-button1 {
+.blog-post1 {
     color:white;
     background-color: rgba(45,45,45,0);
-    width: 100%;
-    height: 100%;
+    text-align: center;
+    padding: 30% 0;
 }
 
-.blog-post-button2 {
+.blog-post2 {
     color:white;
     background-color: rgba(45,45,45,0);
-    width: 100%;
-    height: 100%;
-
+    text-align: center;
+    padding: 30% 0;
 }
 
-.blog-post-button3 {
+.blog-post3 {
     color:white;
     background-color: rgba(45,45,45,0);
-    width: 100%;
-    height: 100%;
-
+    text-align: center;
+    padding: 30% 0;
 }
 
-.button-wrapper1::before { 
+.card-wrapper1::before {
+    display: block; 
     content: "";
     background-image: url(photos/22540018.JPG); /*Back of building in Greensboro, NC photo preview*/
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(3px);
+    filter: blur(1px);
     position:absolute;
-    left:0;
-    top:0;
-    width:100%;
-    height:100%;
+    width:300px;
+    height:300px;
     z-index: -1;
   }
 
-  .button-wrapper2::before { 
+.card-wrapper2::before { 
     content: "";
     background-image: url(photos/22540021.JPG); /*Barn attic in Lexington, NC*/
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(3px);
+    filter: blur(1px);
     position:absolute;
-    left:0;
-    top:0;
     width:100%;
     height:100%;
     z-index: -1;
   }
 
-  .button-wrapper3::before { 
+.card-wrapper3::before { 
     content: "";
     background-image: url(photos/22570017.JPG); /*Old Truck Snowed in Greensboro, NC*/
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
-    filter: blur(3px);
+    filter: blur(1px);
     position:absolute;
-    left:0;
-    top:0;
     width:100%;
     height:100%;
     z-index: -1;

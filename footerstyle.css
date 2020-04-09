@@ -6,6 +6,26 @@
     background-color: #2d2d2d;
 }
 
+.follow-container{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.follow-button {
+    background-color: #2d2d2d;
+    color: white;
+    border: 2px solid #2d2d2d;
+  }
+
+.follow-button:hover {
+    background-color: white;
+    color: #2d2d2d;
+    border: 2px solid white;
+    background-color: #2d2d2d;
+    color: white;
+}
+
 .b1 {
     text-align: center;
     background-color: #2d2d2d;
@@ -19,17 +39,27 @@
     margin: 0;
 }
 
+.contact-button {
+    background-color: #2d2d2d;
+    color: white;
+    border: 2px solid #2d2d2d;
+  }
+
+.contact-button:hover {
+    background-color: white;
+    color: #2d2d2d;
+    border: 2px solid white;
+    background-color: #2d2d2d;
+    color: white;
+}
+
 .b3 {
     text-align: center;
     background-color: #2d2d2d;
     margin: 0;
 }
 
-.footer-contact {
-    color: white;
-}
-
 .footer-text {
     color: #c4c4c4;
-
+    font-size: 8pt;
 }

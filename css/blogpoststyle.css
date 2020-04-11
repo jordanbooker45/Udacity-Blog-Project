@@ -1,37 +1,117 @@
 body {
-    display: grid;
-    grid-template-rows: 60px repeat(7, auto);
-    grid-template-areas: 
-      "header"
-      "breadcrumb"
-      "article"
-      "author"
-      "read-more"
-      "footer";
+  display: grid;
+  grid-template-rows: repeat(6, auto);
+  row-gap: 5px;
+  grid-template-areas: 
+    "header"
+    "breadcrumb"
+    "article"
+    "author"
+    "read-more"
+    "footer";
+  margin: 0;
+  border: 0;
+  padding: 0;
 }
+
+/* Start Header */
 
 .header {
   grid-area: header;
   text-align: right;
-  border-bottom: 2px solid #2d2d2d;
-  margin: 0;
+  border-bottom: .5px solid rgb(45,45,45);
+  border-bottom: .5px solid rgba(45,45,45, .2);
+  box-shadow: 0 5px 5px #2d2d2d;
+  box-shadow: 0 5px 5px rgba(45,45,45, .2);
+
 }
 
 .header-text {
+  font-size: 14pt;
   text-align: right;
+  padding-right: 8px;
+  margin: 8px;
 }
+
+/* End Header */
+/* Start Breadcrumb Nav */
 
 .breadcrumb {
   grid-area: breadcrumb;
+  margin-top: 10px;
 }
 
-.breadcrumb-link {
+.crumbs { 
+  white-space: nowrap; 
   color: #2d2d2d;
   font-size: 10pt;
 }
 
+.crumbs a {
+  display: inline-block;
+  padding: 0 20px;
+  position: relative;
+  color: #2d2d2d;
+  height: 30px;
+}
+.crumbs a::before,
+.crumbs a::after {
+    border-right: 1px solid #666666;
+    content: '';
+    display: block;
+    height: 50%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    transform: skewX(45deg);   
+}
+
+.crumbs a::after {
+    bottom: 0;
+    top: auto;
+    transform: skewX(-45deg);
+}
+
+.crumbs a:last-of-type::before, 
+.crumbs a:last-of-type::after { 
+    display: none; 
+}
+
+.b-home {
+  margin: 6px 0;
+}
+
+.b-posts {
+  margin: 6px 0;
+}
+
+.b-Sample-Blog-Post {
+  margin: 6px 0;
+}
+
+/* End Breadcrumb Nav */
+/* Start Article */
+
+.article {
+  grid-area: article;
+  place-self: center;
+}
+
 .tl {
   text-align: right;
+  padding-right: 16px;
+}
+
+.article-title {
+  font-size: 27pt;
+  margin-bottom: 0;
+}
+
+.article-info {
+  font-size: 14pt;
+  margin-top: 0;
 }
 
 .social {
@@ -63,6 +143,26 @@ body {
 .main-article {
   width: 600px;
   margin: 0 auto 96px auto;
+}
+
+/* End Article */
+/* Start About the Author */
+
+.about-the-author {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  border-top: .5px solid rgb(45,45,45);
+  border-bottom: .5px solid rgb(45,45,45);
+
+}
+
+.about {
+  text-align: left;
+}
+
+.avatar-container {
+  width: 150px;
 }
 
 .feature-image {

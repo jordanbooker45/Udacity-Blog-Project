@@ -1,0 +1,76 @@
+body {
+    display: grid;
+    grid-template-rows: 60px repeat(7, auto);
+    grid-template-areas: 
+      "header"
+      "breadcrumb"
+      "article"
+      "author"
+      "read-more"
+      "footer";
+}
+
+.header {
+  grid-area: header;
+  text-align: right;
+  border-bottom: 2px solid #2d2d2d;
+  margin: 0;
+}
+
+.header-text {
+  text-align: right;
+}
+
+.breadcrumb {
+  grid-area: breadcrumb;
+}
+
+.breadcrumb-link {
+  color: #2d2d2d;
+  font-size: 10pt;
+}
+
+.tl {
+  text-align: right;
+}
+
+.social {
+  text-align: right;
+}
+
+.social-link{
+  color: #2d2d2d;
+}
+
+.follow-button-top {
+  background: white;
+  color: #2d2d2d;
+  border: 2px solid #2d2d2d;
+}
+
+.follow-button-top:hover {
+  color: white;
+  border: 2px solid #2d2d2d;
+  background: #2d2d2d;
+}
+
+.lead {
+  width: 600px;
+  margin: 0 auto 15px auto;
+  text-align: center;
+}
+
+.main-article {
+  width: 600px;
+  margin: 0 auto 96px auto;
+}
+
+.feature-image {
+  width: 100%;
+  max-width: 1236px;
+  height: auto;
+}
+
+.quote {
+  text-align: center;
+}

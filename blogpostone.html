@@ -2,83 +2,109 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>My Collection of Visusal Thoughts</title>
-    <link rel="stylesheet" href="stylesheet.css">
+    <title>Blog Post 1</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/footerstyle.css">
+    <link rel="stylesheet" href="css/cardstyle.css">
+    <link rel="stylesheet" href="css/blogpoststyle.css">
+    <link rel="stylesheet" href="css/abouttheauthorstyle.css">
 </head>
 <body>
-    <header>
-        <h1>My Collection of Visual Thoughts</h1>
+    <header class="header">
+        <h2 class="header-text">My Collection of Visual Thoughts</h2>
     </header>
-    <div class="navigationpath">
+    <div class="breadcrumb">
         <nav>
-            <a href="#"><h3>Home</h3></a>
-            <a href="#"><h3>Posts</h3></a>
-            <a href="#"><h3>Sample Blog Post</h3></a>
+            <a href="#"><h3 class="breadcrumb-link">Home</h3></a>
+            <a href="#"><h3 class="breadcrumb-link">Posts</h3></a>
+            <a href="#"><h3 class="breadcrumb-link">Sample Blog Post</h3></a>
         </nav>
     </div>
     <article>
         <div class ="tl">
-            <h2>Sample Blog Post</h2>
+            <h1>Sample Blog Post</h1>
             <h4>March 29, 2020 by Jordan Booker</h4>
-            <div class="social-media">
-                <a href="#">IG</a>
-                <a href="#">Twitter</a>
-                <a href="#">Github</a>
-            </div>   
+            <div class="social">
+                <a href="#" class="social-link">IG |</a>
+                <a href="#" class="social-link"> Twitter |</a>
+                <a href="https://github.com/jordanbooker45" target="_blank" class="social-link">Github</a>
+                <button class="follow-button-top">Subscribe</button>
+            </div> 
         </div>
-        <div class="main-article">
-            <h3><i>Do Lorem exercitation voluptate elit elit exercitation. </i></h3>
-            <img src="photos/22540018.JPG" alt="Insitute of Contemporary Art, Miami">
-            <p>
-            Quis elit reprehenderit non et laborum esse duis consequat laborum aliqua laborum. 
-            Ut duis minim id ad laboris est ex adipisicing commodo nisi exercitation. Cillum sunt cupidatat adipisicing eu cillum occaecat velit ut quis.
-            Velit enim ullamco dolor ullamco mollit amet labore labore aliqua enim officia ea proident proident.
-            Sit nulla nulla reprehenderit sint adipisicing. 
-            </p>
-            <h3><i>"Tempor est est officia magna mollit."</i></h3>
-            <p>
-            Consectetur incididunt aliqua eu dolor. Qui do ex proident do consectetur nisi officia sint reprehenderit.
-            Commodo sint commodo nostrud proident. Ad consectetur laboris eu aute ad. Reprehenderit culpa consectetur ea in elit in proident excepteur cillum labore id cillum eu. 
-            Adipisicing cupidatat officia anim sint incididunt in aliquip consectetur labore excepteur occaecat mollit eiusmod. 
-            Nulla aute irure exercitation mollit magna cillum occaecat cillum in dolore non aute aliquip laborum.  
-            </p>
+        <div class="article-container">
+            <div class="lead">
+                <h3><i>"Do Lorem exercitation voluptate elit elit exercitation."</i></h3>
+            </div>    
+            <div class="feature-image-container">
+                <img src="photos/22540018.JPG" alt="Insitute of Contemporary Art, Miami" class="feature-image">
+            </div>
+            <div class="main-article">
+                <p>
+                Quis elit reprehenderit non et laborum esse duis consequat laborum aliqua laborum. 
+                Ut duis minim id ad laboris est ex adipisicing commodo nisi exercitation. Cillum sunt cupidatat adipisicing eu cillum occaecat velit ut quis.
+                Velit enim ullamco dolor ullamco mollit amet labore labore aliqua enim officia ea proident proident.
+                Sit nulla nulla reprehenderit sint adipisicing. 
+                </p>
+                <h3 class="quote"><i>"Tempor est est officia magna mollit."</i></h3>
+                <p>
+                Consectetur incididunt aliqua eu dolor. Qui do ex proident do consectetur nisi officia sint reprehenderit.
+                Commodo sint commodo nostrud proident. Ad consectetur laboris eu aute ad. Reprehenderit culpa consectetur ea in elit in proident excepteur cillum labore id cillum eu. 
+                Adipisicing cupidatat officia anim sint incididunt in aliquip consectetur labore excepteur occaecat mollit eiusmod. 
+                Nulla aute irure exercitation mollit magna cillum occaecat cillum in dolore non aute aliquip laborum.  
+                </p>
+            </div>
         </div>
     </article>
-    <hr>
     <section>
         <div class="about-the-author">
-        <img src="photos/Jordan Booker Headshot.jpg" alt="Headshot of Jordan">
-        <div>
-        <div><h4>Written By:</h4><div>
-        <div><h3>Jordan Booker</h3></div>
-        <div><h4>About the author:</h4>
-        <p>Practice makes perfect, of course perfection is just a state of mind.</p></div>
+            <img src="photos/Jordan Booker Headshot.jpg" alt="Jordan" class="avatar">
+            <span class="about">
+                <h4 class="ab-by">Written By:</h4>
+                <h3 class="ab-name">Jordan Booker</h3>
+                <h4 class="ab-intro">About the author:</h4>
+                <p class="ab-quote">Practice makes perfect, of course perfection is just a state of mind.</p>
+            </span>
+        </div>
     </section>
-    <hr>
     <section>
-        <button>
-            <a href="#"><h2>Blog Post 2</h2></a>
-            <h4>March 29, 2020</h4>
-            <h6>Read more...</h6>
-        </button>
-        <button>
-            <a href="#"><h2>Blog Post 3</h2></a>
-            <h4>March 29, 2020</h4>
-            <h6>Read more...</h6>
-        </button>
+        <div class="wrapper">
+            <div class="card-container">
+                <div class="card-wrapper1">
+                    <a href="#">
+                        <div class="blog-post1">
+                            <h2 class="card-text">Blog Post 1</h2>
+                            <h4 class="card-text-medium">March 29, 2020</h4>
+                            <h6 class="card-text-small">Read more...</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-wrapper2">
+                    <a href="#">
+                        <div class="blog-post2">
+                            <h2 class="card-text">Blog Post 2</h2>
+                            <h4 class="card-text-medium">March 29, 2020</h4>
+                            <h6 class="card-text-small">Read more...</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
     </section>
-   
-    <footer>
-        <div>
-            <a href="#">IG</a>
-            <a href="#">Twitter</a>
-            <a href="#">Github</a>
+    <footer class="footer-wrapper">
+        <div class="b1">
+            <a href="#">IG |</a>
+            <a href="#"> Twitter |</a>
+            <a href="https://github.com/jordanbooker45" target="_blank">Github</a>
         </div>
-        <div>
-            <a href="#">Contact</a>
+        <div class="follow-container">
+            <button class="follow-button">Subscribe Today!</button>
         </div>
-        <div>
-            &copy; 2020 Jordan Booker
+        <div class="b2">
+            <button class="contact-button">Contact</button>
+        </div>
+        <div class="b3">
+            <p class="footer-text">&copy; 2020 Jordan Booker</p>
         </div>
     </footer>
 </body>

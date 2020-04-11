@@ -9,11 +9,6 @@ body {
       "footer";
 }
 
-a {
-    text-decoration: none;
-    color: white;
-}
-
 .header-wrapper {
     grid-area: header;
     display: grid;
@@ -23,7 +18,7 @@ a {
       ". . ."
       ". . header-text"
       "nav nav nav";
-    background-image: url(photos/000504070005.jpg); /*Museum of Contemporary Art, Miami*/
+    background-image: url(../photos/000504070005.jpg); /*Museum of Contemporary Art, Miami*/
     height: 500px;
     background-position: left; 
     background-repeat: no-repeat;
@@ -88,7 +83,7 @@ a {
     #cover {
         width: 100%;
         grid-area: cover;
-        background-image: url(photos/000504070005.jpg); /*Museum of Contemporary Art, Miami*/
+        background-image: url(../photos/000504070005.jpg); /*Museum of Contemporary Art, Miami*/
         background-position: left; 
         background-repeat: no-repeat;
         background-size: cover;

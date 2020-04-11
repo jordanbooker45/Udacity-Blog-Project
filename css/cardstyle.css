@@ -81,7 +81,7 @@
 .card-wrapper1::before {
     display: block; 
     content: "";
-    background-image: url(photos/22540018.JPG); /*Back of building in Greensboro, NC photo preview*/
+    background-image: url(../photos/22540018.JPG); /*Back of building in Greensboro, NC photo preview*/
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,7 +94,7 @@
 
 .card-wrapper2::before { 
     content: "";
-    background-image: url(photos/22540021.JPG); /*Barn attic in Lexington, NC*/
+    background-image: url(../photos/22540021.JPG); /*Barn attic in Lexington, NC*/
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
@@ -107,7 +107,7 @@
 
 .card-wrapper3::before { 
     content: "";
-    background-image: url(photos/22570017.JPG); /*Old Truck Snowed in Greensboro, NC*/
+    background-image: url(../photos/22570017.JPG); /*Old Truck Snowed in Greensboro, NC*/
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;

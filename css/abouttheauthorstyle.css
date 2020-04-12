@@ -1,10 +1,25 @@
 .about-the-author {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-top: .5px solid rgb(45,45,45);
+    border-bottom: .5px solid rgb(45,45,45);
+    background-color: #e8e8e8;
     text-align: center;
+    margin: 5px auto;
+    width: 600px;
+    padding: 20px 10px;
 }
 
 .about {
     margin: 0;
+    padding-left: 10px;
+    text-align: left;
 }
+
+.avatar-container {
+    width: 150px;
+  }
 
 .avatar {
     border-radius: 50%;
@@ -13,16 +28,23 @@
 
 .ab-by {
     margin: 0;
+    font-weight: 100;
+    font-size: 16px;
 }
 
 .ab-name{
     margin: 0;
+    padding-bottom: 8px;
+    font-size: 24px;
 }
 
 .ab-intro{
     margin: 0;
+    font-weight: 100;
+    font-size: 16px;
 }
 
 .ab-quote{
     margin: 0;
+    font size: 18px;
 }

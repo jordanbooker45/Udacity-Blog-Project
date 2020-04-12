@@ -30,6 +30,7 @@ body {
 } 
 
 #header-text {
+    font-family: 'Open Sans', sans-serif;
     padding: 1em;
     text-align: right;
     background: none;

@@ -1,3 +1,7 @@
+@import url("stylesheet.css");
+@import url("footerstyle.css");
+@import url("cardstyle.css");
+
 body {
     display: grid;
     margin: 0;
